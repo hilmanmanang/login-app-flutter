@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1048262699070",
+    "firebase_url": "https://muhammad-hilman.firebaseio.com",
+    "project_id": "muhammad-hilman",
+    "storage_bucket": "muhammad-hilman.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048262699070:android:167be52644a35badb7c96f",
+        "android_client_info": {
+          "package_name": "com.hilmanahmad.test_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048262699070-urnqh9f7curprold7im513jnmhttvhfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hilmanahmad.test_project",
+            "certificate_hash": "bff8db22b906578e72202232252ee28fc512c113"
+          }
+        },
+        {
+          "client_id": "1048262699070-cak4evc6m6elae94ivpnn838adml78ie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOhK3IVgNL5rUXPG2MiFJAELGTadclAmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048262699070-cak4evc6m6elae94ivpnn838adml78ie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
