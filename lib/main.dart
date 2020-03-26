@@ -15,7 +15,10 @@ class MyApp extends StatefulWidget {
   }
 }
 
-class MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
+
+  AnimationController _iconAnimationController;
+  Animation<double> _iconAnimation;
 
   bool _isLoggedIn = false;
   bool _isSignedInGoogle = true;
@@ -75,6 +78,21 @@ class MyAppState extends State<MyApp> {
     });
   }
 
+  @override
+  void initState() {
+    super.initState();
+    _iconAnimationController = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 500)
+    );
+    _iconAnimation = CurvedAnimation(
+      parent: _iconAnimationController,
+      curve: Curves.bounceOut
+    );
+    _iconAnimation.addListener(() => this.setState(() {}));
+    _iconAnimationController.forward();
+  }
+
   @override 
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -125,7 +143,7 @@ class MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   FlutterLogo(
-                    size: 100.0
+                    size: _iconAnimation.value * 100.0
                   ),
                   Text(
                     'Welcome to my App',
