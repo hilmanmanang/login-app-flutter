@@ -6,7 +6,6 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as JSON;
 
 
-
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -49,7 +48,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
     switch (result.status) {
       case FacebookLoginStatus.loggedIn:
         final token = result.accessToken.token;
-        final graphResponse = await http.get('https://graph.facebook.com/v2.12/me?fields=name,picture,email&access_token=${token}');
+        final graphResponse = await http.get('https://graph.facebook.com/v2.12/me?fields=name,picture,email&access_token=$token');
         final profile = JSON.jsonDecode(graphResponse.body);
         print(profile);
         setState(() {
@@ -117,20 +116,20 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     OutlineButton(
-                      child: Text("Info"),
+                      child: Text("Home"),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/info');
-                      },
+                        Navigator.pushNamed(context, '/bot_nav_bar');
+                      }
+                    ),
+                    OutlineButton(
+                      child: Text("Logout"),
+                      onPressed: () {
+                        _signOutGoogle();
+                      }
                     )
                   ]
-                ),  
-                OutlineButton(
-                  child: Text("Logout"),
-                  onPressed: () {
-                    _signOutGoogle();
-                  }
-                )
-              ], 
+                )   
+              ] 
             )
           : Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -146,9 +145,9 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     OutlineButton(
-                      child: Text("Info"),
+                      child: Text("Home"),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/info');
+                        Navigator.pushNamed(context, '/bot_nav_bar');
                       }
                     ),
                     OutlineButton(
