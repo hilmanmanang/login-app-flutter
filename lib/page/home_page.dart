@@ -50,44 +50,6 @@ class _HomePageState extends State<HomePage> {
               '27 years old', 
               style: TextStyle(
                 fontSize: 20.0
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0)
-            ),
-            Text(
-              'Address:', 
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold
-              )
-            ),
-            Text(
-              'No. 314, Lorong 8, Taman Balok Maju,', 
-              style: TextStyle(
-                fontSize: 20.0
-              ),
-            ),
-            Text(
-              '26100 Kuantan, Pahang', 
-              style: TextStyle(
-                fontSize: 20.0
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0)
-            ),
-            Text(
-              'Contact:', 
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold
-              )
-            ),
-            Text(
-              '012-9492095', 
-              style: TextStyle(
-                fontSize: 20.0
               )
             )
           ]
