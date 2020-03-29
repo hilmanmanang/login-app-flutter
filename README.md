@@ -18,4 +18,4 @@ samples, guidance on mobile development, and a full API reference.
 ![](hilman_flutter.gif)
 
 Login Page Preview
-![design](https://github.com/hilmanmanang/login-app-flutter/blob/master/loginpage_preview.png)
+![design](https://github.com/hilmanmanang/login-app-flutter/blob/master/apps_preview.png)
