@@ -170,19 +170,25 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                 colorBlendMode: BlendMode.darken
               ),
               Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(70.0)),
                   FlutterLogo(
                     size: _iconAnimation.value * 100.0
                   ),
+                  Padding(
+                    padding: EdgeInsets.all(10.0)),
                   Text(
-                    'Welcome to my App',
+                    "Hilman's Flutter",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 30.0,
                       color: Colors.white
                     )
                   ),
+                  Padding(
+                    padding: EdgeInsets.all(110.0)),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
