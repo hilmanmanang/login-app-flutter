@@ -14,4 +14,4 @@ samples, guidance on mobile development, and a full API reference.
 ![](hilman_flutter_app.gif)
 
 ## Apps review for Login page and Home page:
-![design](https://github.com/hilmanmanang/login-app-flutter/blob/master/apps_preview.png)
+![design](https://github.com/hilmanmanang/login-app-flutter/blob/master/Hilman_design_preview.png)
